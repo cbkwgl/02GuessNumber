@@ -1,0 +1,16 @@
+﻿<Window x:Class="_02GuessNumber.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_02GuessNumber"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Height="420" Width="800">
+        <Label Name="lblWarning" Content="Remaining Lives: 10" FontSize="26" Foreground="Green" Margin="277,34,277,320" RenderTransformOrigin="-2.607,-1.388"/>
+        <Label Name="lblFrom"  Content="0" FontSize="40" Margin="106,162,514,192"></Label>
+        <Label Name="lblTo" Content="100" FontSize="40" Margin="592,162,40,192"/>
+        <Label Name="lblResult" Content="100" FontSize="40" Margin="294,279,338,75"/>
+        <TextBox Name ="txbNumber" Text="?" FontSize="40" TextAlignment="Center" Margin="362,177,362,177" KeyDown="txbNumber_KeyDown"/>
+    </Grid>
+</Window>
